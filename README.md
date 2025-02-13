@@ -26,8 +26,12 @@ this is a project of bank management where user can create an account and do bas
   # steps to set up this project
   -clone this project using
   https://github.com/code-with-raiden/Bank.git
+  
   - install the necessary packages
+    
     pip install - r requirements.txt
+    
   - change the dir to the project
+   
     python manage.py runserver
     
