@@ -1,0 +1,22 @@
+img{
+    height: 200px;
+    width: 200px;
+}
+main{
+    margin: 150px auto;
+    height: 500px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    /* align-items: center; */
+
+}
+main div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CHECK YOUR BALANCE HERE</h1>
+   
+  {% if var %}
+   <h1>THE AVAIABLE BALANCE IS : {{bal}} </h1>
+  {% else %}
+  <form action="" method="POST">
+    {% csrf_token %}
+    ACCOUNT NUMBER <input type="number" name="acc" id=""> <br><br>
+    PIN  <input type="number" name="pin" maxlength="4" id="">
+    <br><br>
+    <button type="submit">CHECK BALANCE</button>
+
+</form>
+  {% endif %}
+</body>
+</html>
