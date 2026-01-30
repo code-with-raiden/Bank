@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <LAbel>ACC number Of Sender</LAbel> <input type="number" name="acc" id=""> <br><br>
+        <LAbel>ACC number Of The Recivier</LAbel> <input type="number" name="t_acc" id=""> <br><br>
+        <LAbel>PIN</LAbel> <input type="number" name="pin" id=""> <br><br>
+        <LAbel>AMOUNT</LAbel> <input type="number" name="amt" id=""> <br><br>
+    
+        <button type="submit">TRANSFER</button>
+
+    </form>
+    {{msg}}
+</body>
+</html>

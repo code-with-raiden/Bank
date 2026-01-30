@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bank_name{
+        text-align: center;
+        }
+        #images{
+            margin:  250px auto 0px;
+            width: 700px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            img{
+                height: 200px;
+                width: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id = "bank_name">PENGUIEN BANK</h1>
+   <div id  = 'images'>
+    <a href="{% url 'reg' %}"><img src="{% static 'images/image.png' %}" alt=""></a>
+    <a href="{% url 'pin' %}"><img src="{% static 'images/pin.png' %}" alt=""></a>
+    <a href="{% url 'bal' %}"><img src="{% static 'images/bal.jpg' %}" alt=""></a>
+    <a href="{% url 'deposit' %}"><img src="{% static 'images/deposit.jpg' %}" alt=""></a>
+    <a href="{% url 'withdraw' %}"><img src="{% static 'images/withdraw.jpg' %}" alt=""></a>
+    <a href="{% url 'acc' %}"><img src="{% static 'images/acc.png' %}" alt=""></a>
+   </div>
+</body>
+</html>
